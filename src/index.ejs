@@ -1,0 +1,28 @@
+<!--
+  This file is used by Webpack as a template to generate an official index.html.
+  While using the dev server (npm start), Webpack will keep the generated html file
+  in memory along with the bundled js & css files.
+ -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <% if (htmlWebpackPlugin.options.description) { %>
+  <meta name="description" content="<% htmlWebpackPlugin.options.description %>">
+  <% } %>
+
+  <% if (htmlWebpackPlugin.options.mobileThemeColor) { %>
+  <meta name="theme-color" content="<% htmlWebpackPlugin.options.mobileThemeColor %>">
+  <meta name="apple-mobile-web-app-status-bar-style" content="<% htmlWebpackPlugin.options.mobileThemeColor %>">
+  <% } %>
+
+</head>
+<body class='ma0 pa0 pb5 fw3'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+</body>
+</html>

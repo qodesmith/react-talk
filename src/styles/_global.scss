@@ -1,0 +1,25 @@
+/*
+  px <-> em: http://pxtoem.com/
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+pre {
+  margin: 0;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.flex-equal {
+  flex: 1 1 0;
+}
